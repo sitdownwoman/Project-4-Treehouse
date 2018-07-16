@@ -1,0 +1,169 @@
+
+body{
+  color: #b1b4c1;
+  font-size: 1em;
+  font-weight: 300;
+  font-family: 'Muli', Helvetica, Arial, serif;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  background: linear-gradient(to top, lightgrey, white 75%);
+}
+
+a {
+  color: #5FB6E1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #53A4C4;
+}
+
+img {
+  width: 100%;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.row {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+
+p {
+  margin-bottom: 40px;
+}
+h1, h2 {
+  font-weight: 600;
+  width: 100%;
+}
+h2 {
+  font-size: 42px;
+  color: #465058;
+  margin: 40px 0 0;
+}
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 40px 0 0;
+  color: #465058;
+}
+h4 {
+  font-weight: 300;
+  font-size: 24px;
+  margin: 10px 0 0;
+}
+h5 {
+  font-weight: 900;
+  font-size: 20px;
+  margin: 10px 0 40px;
+}
+
+.search-bar {
+  height: 42px;
+  width: 90%;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 5px auto 30px;
+}
+
+input {
+  width: 90%;
+  font-size: 16px;
+  border: 0;
+  margin: 15px auto;
+}
+
+
+
+.slides {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+#slide {
+  flex-basis: 48%;
+  margin: 20px 1%;
+}
+#slide img {
+  transition: all .5s;
+}
+#slide img:hover {
+  transform: scale(1.04);
+  transition: all .5s;
+}
+
+
+
+.lb-data .lb-caption {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+
+footer {
+  margin: 80px 0;
+  float: left;
+  width: 100%;
+}
+
+#main-footer {
+  width: 100%;
+  text-align: center;
+
+  padding: 20px 0 25px;
+  color: grey;
+}
+
+/*Media Queries*/
+@media (min-width: 768px) {
+  .slides {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%
+  }
+  #slide {
+    flex-basis: 30%;
+    margin: 20px 1.5%;
+  }
+  #search-bar {
+  height: 46px;
+  width: 80%;
+  }
+  .lb-data .lb-caption {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slides {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #slide {
+    flex-basis: 20%;
+    margin: 20px 2.5%;
+  }
+  .search-bar {
+  height: 50px;
+  width: 50%;
+  }
+  .lb-data .lb-details {
+    width: 600px;
+    float: none;
+    text-align: center;
+    line-height: 1.4em;
+    margin: 20px auto;
+    font-size: 14px;
+  }
+}
