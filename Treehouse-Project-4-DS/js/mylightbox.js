@@ -133,7 +133,7 @@ $(document).ready(function () {
 
             var title = $(this).attr('data-title').search(new RegExp(filter, "i"));
             var alt = $(this).attr('data-alt').search(new RegExp(filter, "i"));
-            if ( alt + title < 0) {
+            if ( alt & title < 0) {
                 $(this).parent().fadeOut();
 
 
